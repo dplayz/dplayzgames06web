@@ -1,0 +1,149 @@
+data:
+  - subsection:
+      name: About Me
+      id: aboutme
+      icon: bi bi-person-fill
+      entries:
+        - text: |
+            Hi! I'm dp!
+  - subsection:
+      name: Games ID
+      id: gamesid
+      dynamicContentId: gameIDs
+      icon: bi bi-person-fill
+      entries:
+        - text: This is the list of the accounts I'm using within the kpop community space
+        - subsection:
+            name: Weverse, Phoning
+            id: weverse-phoning
+            entries:
+            - name: path
+              icon: bi bi-trash
+            - name: path
+              icon: bi bi-trash
+        - subsection:
+            name: JYPE Fans(legacy)
+            id: legacyjypefans
+            entries:
+            - text: I'm not available with the latest fans, cause of too much bloat
+            - name: path
+              icon: bi bi-trash
+            - name: path
+              icon: bi bi-trash
+        - subsection:
+            name: Daum Cafe
+            id: daumcafe
+            entries:
+            - name: path
+              icon: bi bi-trash
+            - name: path
+              icon: bi bi-trash
+        - subsection:
+            name: "Cosmo: the Gate"
+            id: cosmothegate
+            entries:
+            - name: path
+              icon: bi bi-trash
+            - name: path
+              icon: bi bi-trash
+        - subsection:
+            name: "Voting Platforms"
+            id: kpopvoting
+            entries:
+            - name: path
+              icon: bi bi-trash
+            - name: path
+              icon: bi bi-trash
+        - subsection:
+            name: "Voting Platforms"
+            id: kpopvoting
+            entries:
+            - name: path
+              icon: bi bi-trash
+            - name: path
+              icon: bi bi-trash
+  - subsection:
+      name: Other Accounts
+      id: otheraccts
+      icon: bi bi-person-fill
+      entries:
+        - subsection:
+            name: Dev Platforms
+            icon: fa-brands fa-git-alt
+            id: devplatforms
+            entries:
+              - name: "GitHub: dplayz"
+                icon: fa-brands fa-github
+                url: https://github.com/dplayz
+              - name: "GitLab: dplayz"
+                icon: fa-brands fa-gitlab
+                url: https://gitlab.com/dplayz
+        - subsection:
+            name: Fediverse
+            icon: fa-solid fa-play
+            id: fediverseaccounts
+            entries:
+              - name: "Lemmy (lemmy.world): "
+                icon: fa-solid fa-play
+                url: https://
+              - name: "Mastodon (mstdn.social): dp@dpG06.top"
+                icon: fa-brands fa-mastodon
+                url: https://
+              - name: "Threads (threads.net)"
+                icon: fa-solid fa-play
+                url: https://
+        - subsection:
+            name: Media-Related
+            icon: fa-solid fa-play
+            id: mediasharingplatforms
+            entries:
+              - name: "MyDramaList: diiipii"
+                icon: fa-solid fa-play
+                url: https://mydramalist.com/profile/diiipiii
+              - name: "Last.fm: dplayz"
+                icon: fa-brands fa-lastfm
+                url: https://last.fm/user/dpG06
+              - name: "MyAnimeList: diiipiii"
+                icon: fa-solid fa-play
+                url: https://github.com/profile/diiipiii
+  - subsection:
+      name: K-POP Related Accounts
+      id: kpopids
+      icon: bi bi-heart-fill
+      dynamicContentId: kpopIDs
+      entries:
+        - text: This is the list of the accounts I'm using within the kpop community space
+        - subsection:
+            name: "Cosmo: the Gate"
+            id: cosmothegate
+            entries:
+            - name: "tripleS, ARTMS: diiipiii"
+        - subsection:
+            name: "Voting Platforms"
+            id: kpopvoting
+            entries:
+            - name: "mnetplus: diiipii"
+            - name: "Star Planet: diiipiii"
+            - name: "Idol Champ: diiipiii"
+  - subsection:
+      name: Message me!
+      id: chataccounts
+      icon: bi bi-chat-fill
+      entries:
+        - text: Here are the ways you can contact me
+        - name: "Messenger: @dplayzgames06"
+          url: https://m.me/dplayzgames06
+        - name: "Discord: @dpG06"
+          url: https://discord.com/users/495543164829040651
+          popover:
+            content: Casual, non-business related conversation
+            icon: bi bi-info-square-fill
+        - name: "Matrix Network: @dpG06:matrix.org"
+          popover:
+            content: If you are privacy concious person
+            icon: bi bi-info-square-fill
+        - name: "Email: dp@dpG06.top"
+          popover:
+            content: If you have business-related chat
+            icon: bi bi-info-square-fill
+          url: "mailto:dp@dpG06.top"

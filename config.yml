@@ -160,7 +160,7 @@ markup:
     endLevel: 3
     ordered: false
     startLevel: 2
-theme: codenamecore
+theme: codenamecore2
 module:
   mounts:
     - source: data

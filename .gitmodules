@@ -1,3 +1,6 @@
+[submodule "themes/codenamecore2"]
+	path = themes/codenamecore2
+	url = https://github.com/dplayz/codenamecore2
 [submodule "themes/codenamecore"]
 	path = themes/codenamecore
-	url = git@github.com:dplayz/codenamecore.git
+	url = https://github.com/dplayz/codenamecore
