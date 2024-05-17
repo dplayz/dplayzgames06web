@@ -204,10 +204,3 @@ menu:
         iconClass: fa-solid fa-clipboard-list
         openInNewTab: true
       weight: 4
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-    - CMSCONFIG
-    - MANIFEST
