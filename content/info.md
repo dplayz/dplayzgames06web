@@ -38,6 +38,26 @@ if (urlParamValues.fromWavHaus == "true") {
     document.body.style.backgroundSize = "auto 100vh"
     document.body.style.backgroundPosition = "center top"; 
     document.body.style.backgroundRepeat= "repeat-y";
+
+    // Toggle Button 
+    function toggleCanvasDisplay() {
+        var infopageCanvas = document.getElementById("infopage");
+        if (infopageCanvas.style.display === "none") {
+            infopageCanvas.style.display = "block";
+        } else {
+            infopageCanvas.style.display = "none";
+        }
+    }
+    const canvasToggleButton = document.createElement('button');
+    canvasToggleButton.textContent = 'Show/Hide';
+    canvasToggleButton.style.position = 'fixed';
+    canvasToggleButton.style.right = 0;
+    canvasToggleButton.style.top = 0;
+    document.body.appendChild(canvasToggleButton);
+    canvasToggleButton.addEventListener('click', () => {
+        toggleCanvasDisplay();
+    });
+    
     // Make all content be in parent page, not in iframe
     window.addEventListener('DOMContentLoaded', function() {
         const links = document.querySelectorAll('a');
