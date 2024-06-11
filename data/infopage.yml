@@ -9,7 +9,7 @@ data:
   - subsection:
       name: Games ID
       id: gamesid
-      dynamicContentId: gameIDs
+      dynamicContentId: gameID
       icon: bi bi-person-fill
       entries:
         - text: This is the list of the accounts I'm using within the kpop community space
@@ -87,10 +87,10 @@ data:
                 icon: fa-solid fa-play
                 url: https://
               - name: "Mastodon (mstdn.social): dp@dpG06.top"
-                icon: fa-brands fa-mastodon
+                icon: fa fa-mastodon
                 url: https://
               - name: "Threads (threads.net)"
-                icon: fa-solid fa-play
+                icon: fa-brands fa-threads
                 url: https://
         - subsection:
             name: Media-Related
@@ -110,21 +110,28 @@ data:
       name: K-POP Related Accounts
       id: kpopids
       icon: bi bi-heart-fill
-      dynamicContentId: kpopIDs
+      dynamicContentId: kpopID
       entries:
         - text: This is the list of the accounts I'm using within the kpop community space
-        - subsection:
-            name: "Cosmo: the Gate"
-            id: cosmothegate
-            entries:
-            - name: "tripleS, ARTMS: diiipiii"
+        - name: "Cosmo: The Gate: diiipiii"
+          url: https://apollo.cafe/@diiipiii
         - subsection:
             name: "Voting Platforms"
             id: kpopvoting
+            icon: fa-solid fa-square-poll-horizontal
             entries:
             - name: "mnetplus: diiipii"
+              popover:
+                content: mcountdown
+                icon: bi bi-info-square-fill
             - name: "Star Planet: diiipiii"
+              popover:
+                content: The Show
+                icon: bi bi-info-square-fill
             - name: "Idol Champ: diiipiii"
+              popover:
+                content: Show Chamption
+                icon: bi bi-info-square-fill
   - subsection:
       name: Message me!
       id: chataccounts
@@ -133,8 +140,10 @@ data:
         - text: Here are the ways you can contact me
         - name: "Messenger: @dplayzgames06"
           url: https://m.me/dplayzgames06
+          icon: bi bi-messenger
         - name: "Discord: @dpG06"
           url: https://discord.com/users/495543164829040651
+          icon: bi bi-discord
           popover:
             content: Casual, non-business related conversation
             icon: bi bi-info-square-fill
@@ -142,8 +151,10 @@ data:
           popover:
             content: If you are privacy concious person
             icon: bi bi-info-square-fill
+          icon: fa fa-matrix-org
         - name: "Email: dp@dpG06.top"
           popover:
             content: If you have business-related chat
             icon: bi bi-info-square-fill
           url: "mailto:dp@dpG06.top"
+          icon: bi bi-envelope-at-fill
