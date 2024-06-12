@@ -29,6 +29,7 @@ if (urlParamValues.fromWavHaus == "true") {
     document.body.style.fontFamily = "Halvar Breitschrift";
 
     // Modify the main page's meta tags
+    document.domain = "dp.wav.haus";
     window.parent.document.title = "Hello World";
 
     // Randomize the background
@@ -39,7 +40,7 @@ if (urlParamValues.fromWavHaus == "true") {
     document.body.style.backgroundSize = "auto 100vh"
     document.body.style.backgroundPosition = "center top"; 
     document.body.style.backgroundRepeat= "repeat-y";
-
+    document.body.style.backgroundAttachment= "fixed";
     // Toggle Button 
     function toggleCanvasDisplay() {
         var infopageCanvas = document.getElementById("infopage");
