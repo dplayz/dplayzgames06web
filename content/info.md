@@ -28,10 +28,6 @@ if (urlParamValues.fromWavHaus == "true") {
     // Manage font delegation
     document.body.style.fontFamily = "Halvar Breitschrift";
 
-    // Modify the main page's meta tags
-    document.domain = "dp.wav.haus";
-    window.parent.document.title = "Hello World";
-
     // Randomize the background
     const random = Math.floor(Math.random() * imgSource.length);
     console.log(random, imgSource[random]);
