@@ -7,61 +7,33 @@ data:
         - text: |
             Hi! I'm dp!
   - subsection:
-      name: Games ID
+      name: Games Accounts
       id: gamesid
       dynamicContentId: gameID
       icon: bi bi-person-fill
       entries:
-        - text: This is the list of the accounts I'm using within the kpop community space
-        - subsection:
-            name: Weverse, Phoning
-            id: weverse-phoning
-            entries:
-            - name: path
-              icon: bi bi-trash
-            - name: path
-              icon: bi bi-trash
-        - subsection:
-            name: JYPE Fans(legacy)
-            id: legacyjypefans
-            entries:
-            - text: I'm not available with the latest fans, cause of too much bloat
-            - name: path
-              icon: bi bi-trash
-            - name: path
-              icon: bi bi-trash
-        - subsection:
-            name: Daum Cafe
-            id: daumcafe
-            entries:
-            - name: path
-              icon: bi bi-trash
-            - name: path
-              icon: bi bi-trash
-        - subsection:
-            name: "Cosmo: the Gate"
-            id: cosmothegate
-            entries:
-            - name: path
-              icon: bi bi-trash
-            - name: path
-              icon: bi bi-trash
-        - subsection:
-            name: "Voting Platforms"
-            id: kpopvoting
-            entries:
-            - name: path
-              icon: bi bi-trash
-            - name: path
-              icon: bi bi-trash
-        - subsection:
-            name: "Voting Platforms"
-            id: kpopvoting
-            entries:
-            - name: path
-              icon: bi bi-trash
-            - name: path
-              icon: bi bi-trash
+        - text: Due to the responsibilities in life, my play time has reduced, and only plays casually.
+        - name: "Minecraft: dpG064539"
+          icon: fa-solid fa-gamepad
+        - name: "osu!: dpG06"
+          url: https://osu.ppy.sh/users/19989687
+          icon: fa-solid fa-gamepad
+        - name: "Genshin Impact - Asia Server: dp!(897113583)"
+          icon: fa-solid fa-gamepad
+          url: https://www.hoyolab.com/accountCenter/postList?id=290377090
+        - name: "PUBG Mobile - Asia Server: dpG06(51369463074)"
+          icon: fa-solid fa-gamepad
+        - name: "SuperStar Ecosystem of Games: diiipiii"
+          icon: fa-solid fa-gamepad
+          popover:
+            content: SuperStar STAYC, SuperStar PH | Casually plays, not competitively
+            icon: bi bi-info-square-fill
+        - name: "Roblox: dp_dpG06(dplayzROBLOX06)"
+          icon: fa-solid fa-gamepad
+          url: https://www.roblox.com/users/650986696/profile
+          popover:
+            content: Inactive due to lack of Wine/Linux Support
+            icon: bi bi-info-square-fill
   - subsection:
       name: Other Accounts
       id: otheraccts
@@ -78,6 +50,9 @@ data:
               - name: "GitLab: dplayz"
                 icon: fa-brands fa-gitlab
                 url: https://gitlab.com/dplayz
+                popover:
+                  content: Inactive in this platform
+                  icon: bi bi-info-square-fill`
         - subsection:
             name: Fediverse
             icon: fa-solid fa-play
@@ -92,6 +67,9 @@ data:
               - name: "Threads (threads.net)"
                 icon: fa-brands fa-threads
                 url: https://
+                popover:
+                  content: Not yet federated
+                  icon: bi bi-info-square-fill
         - subsection:
             name: Media-Related
             icon: fa-solid fa-play
@@ -110,6 +88,7 @@ data:
       name: K-POP Related Accounts
       id: kpopids
       icon: bi bi-heart-fill
+      legacyDynamicContent: true
       dynamicContentId: kpopID
       entries:
         - text: This is the list of the accounts I'm using within the kpop community space
