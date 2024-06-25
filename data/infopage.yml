@@ -25,8 +25,21 @@ data:
           icon: fa-solid fa-gamepad
         - name: "SuperStar Ecosystem of Games: diiipiii"
           icon: fa-solid fa-gamepad
+          imgFullScreen: true
+          imgFullScreenSrc: /images/logo.png
+        - name: "SuperStar STAYC: diiipiii"
+          icon: fa-solid fa-gamepad
+          imgFullScreen: true
+          imgFullScreenId: SSSTAYCSTATS
           popover:
-            content: SuperStar STAYC, SuperStar PH | Casually plays, not competitively
+            content: Casually plays, not competitively
+            icon: bi bi-info-square-fill
+        - name: "SuperStar PH: diiipiii"
+          icon: fa-solid fa-gamepad
+          imgFullScreen: true
+          imgFullScreenId: SSPHSTATS
+          popover:
+            content: Casually plays, not competitively
             icon: bi bi-info-square-fill
         - name: "Roblox: dp_dpG06(dplayzROBLOX06)"
           icon: fa-solid fa-gamepad
@@ -99,17 +112,35 @@ data:
             id: kpopvoting
             icon: fa-solid fa-square-poll-horizontal
             entries:
-            - name: "mnetplus: diiipii"
+            - name: "mnetplus: diiipiii"
+              imgFullScreen: true
+              imgFullScreenId: MNETPLUSSTATS
               popover:
                 content: mcountdown
                 icon: bi bi-info-square-fill
             - name: "Star Planet: diiipiii"
+              imgFullScreen: true
+              imgFullScreenId: STARPLANETSTATS
               popover:
                 content: The Show
                 icon: bi bi-info-square-fill
-            - name: "Idol Champ: diiipiii"
+            - name: "idolchamp: diiipiii"
+              imgFullScreen: true
+              imgFullScreenId: IDOLCHAMPSTATS
               popover:
                 content: Show Chamption
+                icon: bi bi-info-square-fill
+            - name: "ALLCHART: diiipiii"
+              imgFullScreen: true
+              imgFullScreenId: ALLCHARTSTATS
+              popover:
+                content: Music Bank
+                icon: bi bi-info-square-fill
+            - name: "Mubeat: diiipiii"
+              imgFullScreen: true
+              imgFullScreenId: MUBEATSTATS
+              popover:
+                content: Show! Music Core
                 icon: bi bi-info-square-fill
   - subsection:
       name: Message me!

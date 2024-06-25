@@ -5,6 +5,7 @@ entryDataFile: infopage
 {{<infopage/pfp gravatar-email="dp@dplayzgames06.tk">}}
 
 {{<html>}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <style>
 @font-face {
     font-family: 'Halvar Breitschrift';
@@ -24,10 +25,8 @@ const imgSource = [
 ]
 if (urlParamValues.fromWavHaus == "true") {
     console.log("Hello there from dp.wav.haus!");
-
     // Manage font delegation
     document.body.style.fontFamily = "Halvar Breitschrift";
-
     // Randomize the background
     const random = Math.floor(Math.random() * imgSource.length);
     console.log(random, imgSource[random]);
@@ -55,7 +54,6 @@ if (urlParamValues.fromWavHaus == "true") {
     canvasToggleButton.addEventListener('click', () => {
         toggleCanvasDisplay();
     });
-    
     // Make all content be in parent page, not in iframe
     window.addEventListener('DOMContentLoaded', function() {
         const links = document.querySelectorAll('a');
@@ -64,5 +62,49 @@ if (urlParamValues.fromWavHaus == "true") {
         });
     });
 }
+window.addEventListener('DOMContentLoaded', function() {
+	var urlPublicizedInfo="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwb6ld_4m3PpfxYC_rabLiynoRnAAAnvLaFoyVAtcZpkuMfVbHK2pWRUYzD--tWuKeLIJ9VT9zvNSE/pub?gid=1417795743&single=true&output=csv";
+	var dataPublicized;
+	Papa.parse(urlPublicizedInfo, {
+		download: true,
+		header: true,
+		complete: function(results) {
+			var data = results.data
+			function getLatestEntries(entries) {
+				const latestEntries = {};
+				entries.forEach(entry => {
+					const entryType = entry["Entry Type"];
+					latestEntries[entryType] = entry;
+				});
+				return Object.values(latestEntries);
+			}
+			function replaceWithDownloadLink(entries) {
+				return entries.map(entry => {
+					const fileIdMatch = entry["Image File"].match(/id=([^&]+)/);
+					if (fileIdMatch) {
+					const fileId = fileIdMatch[1];
+					entry["Image File"] = `https://lh3.googleusercontent.com/d/${fileId}?h=s500`;
+					}
+					return entry;
+				});
+			}
+			data = getLatestEntries(data);
+			data = replaceWithDownloadLink(data);
+			console.log(data)
+			window.dataPublicized = data;
+            if (urlParamValues.displaygameID == "true"){
+			    document.getElementById("SSSTAYCSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "Games--SUPERSTARSTAYC";})["Image File"];
+			    document.getElementById("SSPHSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "Games--SUPERSTARPH";})["Image File"];
+            }
+            if (urlParamValues.displaykpopID == "true"){
+			    document.getElementById("MNETPLUSSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "KpopSNS--mnetplus";})["Image File"];
+			    document.getElementById("STARPLANETSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "KpopSNS--STARPLANET";})["Image File"];
+			    document.getElementById("MUBEATSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "KpopSNS--mubeat";})["Image File"];
+			    document.getElementById("ALLCHARTSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "KpopSNS--ALLCHART";})["Image File"];
+			    document.getElementById("IDOLCHAMPSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "KpopSNS--idolchamp";})["Image File"];
+            }
+		}
+	});
+});
 </script>
 {{</html>}}
