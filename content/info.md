@@ -63,7 +63,12 @@ if (urlParamValues.fromWavHaus == "true") {
     });
 }
 window.addEventListener('DOMContentLoaded', function() {
-	var urlPublicizedInfo="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwb6ld_4m3PpfxYC_rabLiynoRnAAAnvLaFoyVAtcZpkuMfVbHK2pWRUYzD--tWuKeLIJ9VT9zvNSE/pub?gid=1417795743&single=true&output=csv";
+    if (window.location.hash === "#contacts" ){
+        var chatAccountsElement = document.getElementById("contacts");
+        chatAccountsElement.click();
+        setTimeout(() => chatAccountsElement.scrollIntoView({ behavior: 'smooth' }), 200);
+    }
+    var urlPublicizedInfo="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwb6ld_4m3PpfxYC_rabLiynoRnAAAnvLaFoyVAtcZpkuMfVbHK2pWRUYzD--tWuKeLIJ9VT9zvNSE/pub?gid=1417795743&single=true&output=csv";
 	var dataPublicized;
 	Papa.parse(urlPublicizedInfo, {
 		download: true,
