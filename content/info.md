@@ -15,15 +15,7 @@ entryDataFile: infopage
 }
 </style>
 <script>
-// The array of randomized background images
-const imgSource = [
-    "url(https://pbs.twimg.com/media/GMV1NxIbYAAlXPv?format=jpg&name=large)", 
-    "url(https://pbs.twimg.com/media/GPtp6toWQAANmgB?format=jpg&name=large)", 
-    "url(https://pbs.twimg.com/media/GPpW8u7WMAIV1jp?format=jpg&name=large)",
-    "url(https://pbs.twimg.com/media/GPiTOvvawAEiEdM?format=jpg&name=large)",
-    "url(https://pbs.twimg.com/media/GOWFD-TbAAIuxtN?format=jpg&name=large)"
-]
-if (urlParamValues.fromWavHaus == "true") {
+if (urlParamValues.ref == "dp.wav.haus") {
     console.log("Hello there from dp.wav.haus!");
     // Manage font delegation
     document.body.style.fontFamily = "Halvar Breitschrift";
