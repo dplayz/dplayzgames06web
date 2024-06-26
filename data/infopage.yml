@@ -23,10 +23,6 @@ data:
           url: https://www.hoyolab.com/accountCenter/postList?id=290377090
         - name: "PUBG Mobile - Asia Server: dpG06(51369463074)"
           icon: fa-solid fa-gamepad
-        - name: "SuperStar Ecosystem of Games: diiipiii"
-          icon: fa-solid fa-gamepad
-          imgFullScreen: true
-          imgFullScreenSrc: /images/logo.png
         - name: "SuperStar STAYC: diiipiii"
           icon: fa-solid fa-gamepad
           imgFullScreen: true
@@ -144,13 +140,10 @@ data:
                 icon: bi bi-info-square-fill
   - subsection:
       name: Message me!
-      id: chataccounts
+      id: contacts
       icon: bi bi-chat-fill
       entries:
         - text: Here are the ways you can contact me
-        - name: "Messenger: @dplayzgames06"
-          url: https://m.me/dplayzgames06
-          icon: bi bi-messenger
         - name: "Discord: @dpG06"
           url: https://discord.com/users/495543164829040651
           icon: bi bi-discord
@@ -158,6 +151,7 @@ data:
             content: Casual, non-business related conversation
             icon: bi bi-info-square-fill
         - name: "Matrix Network: @dpG06:matrix.org"
+          url: https://matrix.to/#/@dpG06:matrix.org
           popover:
             content: If you are privacy concious person
             icon: bi bi-info-square-fill
@@ -168,3 +162,6 @@ data:
             icon: bi bi-info-square-fill
           url: "mailto:dp@dpG06.top"
           icon: bi bi-envelope-at-fill
+        - name: "Messenger: @dplayzgames06"
+          url: https://m.me/dplayzgames06
+          icon: bi bi-messenger
