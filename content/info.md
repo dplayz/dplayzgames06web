@@ -97,11 +97,13 @@ window.addEventListener('DOMContentLoaded', function() {
 			data = replaceWithDownloadLink(data);
 			console.log(data)
 			window.dataPublicized = data;
-            if (urlParamValues.displaygameID == "true"){
+            if (((urlParamValues.display != undefined && urlParamValues.display.includes("kpopID")) == true) || 
+                (urlParamValues.displaykpopID == "true")){
 			    document.getElementById("SSSTAYCSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "Games--SUPERSTARSTAYC";})["Image File"];
 			    document.getElementById("SSPHSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "Games--SUPERSTARPH";})["Image File"];
             }
-            if (urlParamValues.displaykpopID == "true"){
+            if (((urlParamValues.display != undefined && urlParamValues.display.includes("gameID")) == true) || 
+                (urlParamValues.displaygameID == "true")){
 			    document.getElementById("MNETPLUSSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "KpopSNS--mnetplus";})["Image File"];
 			    document.getElementById("STARPLANETSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "KpopSNS--STARPLANET";})["Image File"];
 			    document.getElementById("MUBEATSTATS").href = data.find(function(entry) {return entry["Entry Type"] === "KpopSNS--mubeat";})["Image File"];
