@@ -1,0 +1,133 @@
+# codenamecore config file v2
+theme: codenamecore2
+languageCode: en-us
+taxonomies:
+  category: categories
+  tag: tags
+  authors: author
+module:
+  mounts:
+    - source: data
+      target: data
+    - source: readFile
+      target: data
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+baseURL: https://dpG06.top
+title: dplayz Games
+
+enableGitInfo: true
+enableRobotsTXT: true
+buildDrafts: false
+
+# Parameters
+params:
+  cms: # StaticCMS Configuration
+    backend:
+      name: github
+      github:
+        repo: dplayz/web
+        branch: main
+        useGraphQL: false
+        auth_endpoint: /api/auth
+    media_folder: images
+    public_folder: static/images
+    logo_url: null
+    collections:
+      - folder: data/
+        create: true
+        fieldType: markdownOnly
+        label: Data Files
+        name: dataFiles
+  theme: 
+  identity: # Website Identity Parameters Configuration
+    general:
+      logo: /images/logo.png
+      description: The official website of dplayz Games where information about him
+        are posted.
+      defaultAuthor:
+        name: dplayzgames06
+        gravatar: dp@dplayzgames06.tk
+      pagePreviewImage: /images/preview.png
+      favicon: favicon.ico
+    copyright:
+      notice: All elements are owned by the writers unless otherwise noted.
+    metaTags: # <meta> tags
+    socials:
+      facebook:
+      twitter-x: 
+      instagram:
+      tiktok:
+      threads:
+      custom:
+        - icon:
+          link: 
+
+
+    webmaster:
+      noIndexAll: false
+
+    scripts: # merged from sdk and analytics
+      onesignalSDKID: c297670d-63a2-4232-8f52-a8602fdffc33
+      fbSDKID: "2932203920349027"
+      analytics:
+        googleAnalytics:
+          disablePageView: false
+# Menu links
+menus:
+  header: # Header
+    - name: Home
+      url: /
+      weight: 10
+    - name: Projects
+      pageRef: /projects
+      weight: 20
+    - name: Tags
+      pageRef: /tags
+      weight: 30
+
+  footer:
+    - identifier: services
+      weight: 1
+      name: "Services"
+      params:
+        iconClass: fa-solid fa-users-line
+        links:
+          - name: Main Website
+            url: https://dpG06.top
+          - name: Status Page
+            url: https://status.dpG06.top
+          - name: Projects Website
+            url: https://projects.dpG06.top
+          - name: School Projects Website
+            url: https://school-projects.dpG06.top
+          - name: Paste Service
+            url: https://paste.dpG06.top
+          - name: One time File sharing Website
+            url: https://anyshare.dpG06.top
+    - identifier: contact
+      weight: 2
+      name: "Contact Information"
+      params:
+        iconClass: fa-solid fa-users-line
+        links:
+          - name: Discord
+            url: #https://discord.com/users/495543164829040651
+          - name: Email
+            url: mailto:dp@dpG06.top
+          - name: Matrix Network
+            url: https://matrix.to/#/@dpG06:matrix.org
+          - name: Infopage
+            url: /info
+
+    - name: Home
+      url: /
+      weight: 10
+    - name: Posts
+      pageRef: /posts
+      weight: 20
+    - name: Tags
+      pageRef: /tags
+      weight: 30
