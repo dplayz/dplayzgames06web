@@ -42,6 +42,20 @@ params:
         label: Data Files
         name: dataFiles
   theme: 
+    custom:
+      - name: dptheme
+        baseColorScheme: dark
+        iconClass: bi bi-palette
+      - name: dp.wav.haus
+        baseColorScheme: dark
+        iconClass: bi bi-palette-fill
+        options:
+          - type: button
+            onclick: "randomizeBG()"
+            name: "Random BG"
+          - type: button
+            onclick: "toggleCanvasDisplay()"
+            name: Show/Hide
   identity: # Website Identity Parameters Configuration
     general:
       logo: /images/logo.png
@@ -78,13 +92,13 @@ params:
 # Menu links
 menus:
   header: # Header
-    - name: Home
-      url: /
+    - name: Info
+      url: /info
       weight: 10
-    - name: Projects
-      pageRef: /projects
+    - name: Status
+      pageRef: https://status.dpg06.top
       weight: 20
-    - name: Tags
+    - name: Workstation
       pageRef: /tags
       weight: 30
 
@@ -107,6 +121,11 @@ menus:
             url: https://paste.dpG06.top
           - name: One time File sharing Website
             url: https://anyshare.dpG06.top
+          - name: Assets Host Service
+            url: https://r2.dpG06.top
+          - name: Media Sharing Service
+            url: https://media.dpG06.top
+
     - identifier: contact
       weight: 2
       name: "Contact Information"
@@ -131,3 +150,10 @@ menus:
     - name: Tags
       pageRef: /tags
       weight: 30
+
+
+
+outputs:
+  home:
+  - HTML
+  - RSS
