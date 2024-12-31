@@ -1,0 +1,97 @@
+html[data-theme-name="dptheme"][data-bs-theme="dark"] body {
+  background-color: #0af;
+}
+html[data-theme-name="dptheme"][data-bs-theme="dark"] ul#shape {
+  position: absolute;
+  z-index: -1;
+  display: unset !important;
+  margin: 0 !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+html[data-theme-name="dptheme"][data-bs-theme="dark"] ul#shape li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.4);
+  bottom: -200px;
+
+  animation: floating 25s infinite linear;
+
+}
+
+html[data-theme-name="dptheme"][data-bs-theme="dark"] ul#shape li:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 25%;
+  animation-delay: 0.1s;
+}
+
+ul#shape li:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 95%;
+  animation-delay: 10s;
+}
+
+html[data-theme-name="dptheme"][data-bs-theme="dark"]  ul#shape li:nth-child(3) {
+  width: 70px;
+  height: 70px;
+  left: 75%;
+  animation-delay: 18s;
+}
+
+html[data-theme-name="dptheme"][data-bs-theme="dark"]  ul#shape li:nth-child(4) {
+  width: 30px;
+  height: 30px;
+  left: 10%;
+  animation-delay: 5s;
+}
+
+html[data-theme-name="dptheme"][data-bs-theme="dark"]  ul#shape li:nth-child(5) {
+  width: 40px;
+  height: 40px;
+  left: 60%;
+  animation-delay: 8s;
+}
+
+html[data-theme-name="dptheme"][data-bs-theme="dark"]  ul#shape li:nth-child(6) {
+  width: 90px;
+  height: 90px;
+  left: 84%;
+  animation-delay: 1s;
+}
+
+html[data-theme-name="dptheme"][data-bs-theme="dark"]  ul#shape li:nth-child(7) {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  animation-delay: 15s;
+}
+
+html[data-theme-name="dptheme"][data-bs-theme="dark"]  ul#shape li:nth-child(8) {
+  width: 100px;
+  height: 100px;
+  left: 40%;
+  animation-delay: 6s;
+}
+
+@keyframes floating {
+  from {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  to {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 80%;
+  }
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Halvar Breitschrift';
+  font-weight: normal;
+  font-display: swap;
+  src: url('https://raw.githubusercontent.com/kuiperdog/nova/main/src/lib/assets/fonts/halvar_breitschrift.woff2') format('woff2');
+}
+html[data-theme-name="dpwavhaus"][data-bs-theme="dark"] body {
+    font-family: "Halvar Breitschrift";
+    background: var(--theme-dpwavhaus-dark-backgroundImg); 
+    background-color: #000;
+    background-size: auto 100vh;
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
